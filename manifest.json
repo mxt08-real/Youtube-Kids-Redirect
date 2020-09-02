@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Kids Redirect",
+    "version": "2.0",
+    "description": "Redirects you to youtube kids when you enter youtube",
+    "icons": {
+	"180": "icon.png" },
+    "content_scripts": [ {
+	"matches": ["*://*.youtube.com/*"],
+	"js": ["main.js"] } ],
+    "permissions": ["*://*.youtube.com/*", "unlimitedStorage"],
+    "browser_action": {
+"default_icon": {
+"180": "icon.png" },
+"default_title": "Youtube Kids Redirect",
+"default_popup": "popup.html" }
+}
